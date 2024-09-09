@@ -1,0 +1,13 @@
+.our-collection-title{
+   
+
+}
+
+.our-collection-title h1{
+color: #83888F;
+background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%);
+background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    webkit-background-clip: text;
+}
