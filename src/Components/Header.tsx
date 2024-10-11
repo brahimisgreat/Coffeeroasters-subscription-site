@@ -4,23 +4,25 @@ import "../Components/Header.css";
 import close from "../assets/shared/mobile/icon-close.svg";
 import { useState } from "react";
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  console.log(isOpen);
 
   return (
     <nav className="header">
       <div className="logo">
-        <img className="header-logo relative z-10" src={logo} alt="logo" />
+        <img className="header-logo relative z-10 md:h-6" src={logo} alt="logo" />
       </div>
 
       <img
         src={isOpen ? close : hamburger}
+        id="ham"
         className={isOpen ? "open relative z-10" : "menu  relative z-10 "}
         alt="hamburger"
         onClick={() => setIsOpen(!isOpen)}
       />
 
-      <ul className={isOpen ? "nav-links " : "hidden"}>
-        <div className="flex flex-col gap-4 mb-96 items-center">
+      <ul className={isOpen ? "nav-links md:h-6 " : "hidden"}>
+        <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0 ">
           <li className="text-2xl">Home</li>
           <li className="text-2xl">About Us</li>
           <li className="text-2xl">Create Your Plan</li>

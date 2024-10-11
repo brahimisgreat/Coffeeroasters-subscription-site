@@ -4,7 +4,7 @@ import { Ourcollection } from './Ourcollection'
 import './Home.css'
 export const Home = () => {
   return (
-    <main className='home'>
+    <main className='home flex flex-col gap-32'>
       <CreateYourPlan />
       <Ourcollection />
       
