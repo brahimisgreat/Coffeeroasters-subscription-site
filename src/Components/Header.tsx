@@ -8,9 +8,9 @@ export const Header = () => {
   console.log(isOpen);
 
   return (
-    <nav className="header">
+    <nav className="header flex justify-between">
       <div className="logo">
-        <img className="header-logo relative z-10 md:h-6" src={logo} alt="logo" />
+        <img className="header-logo relative z-10 md:h-6 md:w-60" src={logo} alt="logo" />
       </div>
 
       <img
@@ -21,11 +21,11 @@ export const Header = () => {
         onClick={() => setIsOpen(!isOpen)}
       />
 
-      <ul className={isOpen ? "nav-links md:h-6 " : "hidden"}>
-        <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0 ">
-          <li className="text-2xl">Home</li>
-          <li className="text-2xl">About Us</li>
-          <li className="text-2xl">Create Your Plan</li>
+      <ul className={isOpen ? "nav-links md:h-6  " : "hidden"}>
+        <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0  ">
+          <li className="text-2xl md:text-xs ">Home</li>
+          <li className="text-2xl md:text-xs">About Us</li>
+          <li className="text-2xl md:text-xs ">Create Your Plan</li>
         </div>
       </ul>
     </nav>
