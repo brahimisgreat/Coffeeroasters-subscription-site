@@ -6,9 +6,10 @@ import danche from '../../../assets/home/desktop/image-danche.png'
 
 export const Ourcollection = () => {
   return (
-    <section className="text-center">
-      <div className="">
+    <section className="collection text-center">
+      <div className="oc relative">
         <h2 className="text-black">our collection</h2>
+        <div className="buddy" />
       </div>
       <div className="flex flex-col gap-12" >
         <div className="text-black flex flex-col gap-4 text-center">
