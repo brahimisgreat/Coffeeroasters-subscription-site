@@ -4,3 +4,19 @@
     
 }
 
+@media(min-width: 768px){
+    .create-your-plan{
+        background: url('../../../assets/home/tablet/image-hero-coffeepress.jpg') no-repeat center center/cover;
+        height: 500px;
+    }
+
+
+}
+
+
+@media(min-width: 1024px){
+    .create-your-plan{
+        background: url('../../../assets/home/desktop/image-hero-coffeepress.jpg') no-repeat center center/cover;
+        height: 500px;
+    }
+}

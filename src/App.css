@@ -3,4 +3,17 @@
   background: #FEFCF7;
   width: 327px;
   margin: 0 auto;
+  max-width: 1280px;
+}
+
+@media(min-width: 768px){
+  .App{
+    width: 689px;
+  }
+}
+
+@media(min-width: 1024px){
+  .App{
+    width: 1280px;
+  }
 }

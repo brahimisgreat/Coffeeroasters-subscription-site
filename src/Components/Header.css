@@ -57,7 +57,12 @@
     width: auto;
   }
 
-  .create-your-plan{
-    border: solid blue;
-  }
+  
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 3rem 0;
+  
+}
 }
