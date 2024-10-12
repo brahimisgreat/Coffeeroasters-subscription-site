@@ -1,5 +1,6 @@
 
-
+.oc{
+}
 .oc h2 {
   color: #83888f;
   text-align: center;
@@ -12,7 +13,15 @@
 .buddy {
   position: absolute;
   width: 100%;
-  height: 72px;
+  height: 100%;
   background: linear-gradient(180deg, rgba(254, 252, 247, 0) 0%, #fefcf7 100%);
   top: 0;
+}
+
+
+@media(min-width: 768px){
+  .oc h2{
+    font-size: 96px;
+  }
+
 }

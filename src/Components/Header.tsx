@@ -22,8 +22,8 @@ export const Header = () => {
       />
 
       <ul className={isOpen ? "nav-links md:h-6  " : "hidden"}>
-        <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0  ">
-          <li className="text-2xl md:text-xs ">Home</li>
+        <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0 md:text-gray-600  ">
+          <li className="text-2xl md:text-xs">Home</li>
           <li className="text-2xl md:text-xs">About Us</li>
           <li className="text-2xl md:text-xs ">Create Your Plan</li>
         </div>
