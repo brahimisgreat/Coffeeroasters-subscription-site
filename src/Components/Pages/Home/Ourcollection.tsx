@@ -6,16 +6,16 @@ import danche from "../../../assets/home/desktop/image-danche.png";
 
 export const Ourcollection = () => {
   return (
-    <section className="collection text-center flex flex-col gap-4 lg:border border-black ">
-      <div className="oc relative lg:w-full">
+    <section className="collection text-center flex flex-col gap-4  ">
+      <div className="oc relative h-16 lg:w-full">
         <h2 className="collective text-black md:text-8xl lg:w-full  ">our collection</h2>
         <div className="buddy lg:w-full" />
       </div>
 
-      <div className="flex flex-col gap-12 md:items-center lg:flex-row ">
+      <div className="flex flex-col gap-12 md:items-center lg:flex-row relative">
         <div className="text-black flex flex-col  text-center  md:items-center md:flex-row  lg:flex-col lg:gap-16">
           <img className="md:w-64" src={gran} alt="our collection" />
-          <div className="flex flex-col gap- md:text-left lg:text-center  ">
+          <div className="flex flex-col gap-4 md:text-left lg:text-center  ">
             <h4 className="text-2xl font-black">Gran Espresso</h4>
             <p className=" md:w-72">
               Light and flavorful blend with cocoa and black pepper for an
