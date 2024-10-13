@@ -4,3 +4,9 @@
   background: #2c343e;
   
 }
+
+@media (min-width: 768px) {
+  .why{
+    height: 573px;
+  }
+}

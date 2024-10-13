@@ -12,9 +12,10 @@
 .buddy {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background: linear-gradient(180deg, rgba(254, 252, 247, 0) 0%, #fefcf7 100%);
   top: 0;
+
 }
 
 @media (min-width: 768px) {
@@ -22,5 +23,6 @@
     font-size: 96px;
   }
 
- 
+  .collective {
+  }
 }
