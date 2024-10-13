@@ -2,11 +2,18 @@
   height: 902px;
   border-radius: 10px;
   background: #2c343e;
-  
+}
+
+.dothis{
+  bottom: 34rem;
 }
 
 @media (min-width: 768px) {
   .why{
     height: 573px;
+  }
+
+  .dothis{
+    bottom: 20rem;
   }
 }
