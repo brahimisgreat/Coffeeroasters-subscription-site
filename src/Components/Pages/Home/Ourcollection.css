@@ -1,5 +1,4 @@
-
-.oc{
+.oc {
 }
 .oc h2 {
   color: #83888f;
@@ -18,10 +17,11 @@
   top: 0;
 }
 
-
-@media(min-width: 768px){
-  .oc h2{
+@media (min-width: 768px) {
+  .oc h2 {
     font-size: 96px;
   }
 
+  .collective {
+  }
 }
