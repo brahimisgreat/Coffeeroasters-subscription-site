@@ -5,8 +5,9 @@ import truck from "../../../assets/home/desktop/icon-truck.svg";
 
 export const Whychoose = () => {
   return (
-    <div className="relative flex flex-col items-center lg:h-1/2">
-      <div className="why flex flex-col items-center px-7 pt-16 gap-6 md:px-1 md:h- ">
+    <div className="death relative h-4/6">
+    <div className="dad  relative flex flex-col items-center lg:h-1/2 ">
+      <div className="why flex flex-col items-center px-7 pt-16 gap-6 md:px-1  ">
         <h3 className="text-3xl font-black ">Why choose us?</h3>
         <p className="opacity-80 text-center md:w-9/12 lg:w-5/12 leadin">
           A large part of our role is choosing which particular coffees will be
@@ -15,8 +16,8 @@ export const Whychoose = () => {
         </p>
       </div>
 
-      <div className="dothis flex flex-col items-center w-full   relative  gap-6 md:top-1/2 lg:flex-row lg:justify-center  ">
-        <div className="greensquare flex flex-col w-10/12 items-center justify-center gap-6 text-center px-10 rounded-lg h-96  text-white bg-teal-600 md:h-44 md:flex-row lg:flex-col lg:h-96 lg:max-w-80 ">
+      <div className="dothis absolute top-80 flex flex-col items-center w-full    gap-6 md:top-1/2 lg:flex-row lg:justify-center  ">
+        <div className="greensquare flex flex-col w-10/12 items-center justify-center gap-6 text-center px-10 rounded-lg h-96 text-white bg-teal-600 md:h-44 md:flex-row lg:flex-col lg:h-96 lg:max-w-80 ">
           <img src={bean} className="ant" />
           <div className="flex flex-col gap-4 lg:items-center lg:justify-center">
 
@@ -50,6 +51,7 @@ export const Whychoose = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

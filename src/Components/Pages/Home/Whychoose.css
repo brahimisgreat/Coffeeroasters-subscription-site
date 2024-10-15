@@ -1,20 +1,37 @@
-.why {
-  height: 902px;
+.death{
+  max-height: 902px;
   border-radius: 10px;
   background: #2c343e;
+}
+
+.why {
+ 
+}
+
+.dad{
+  height: 1400px;
 }
 
 .dothis{
   bottom: 34rem;
 }
 
+.why{
+  height: 1000px;
+}
+
+
+
 @media (min-width: 768px) {
+.dad{
+}
+
   .why{
     height: 573px;
+    border: solid 1px ;
   }
 
   .dothis{
     bottom: 20rem;
-    border: solid 1px #2c343e;
   }
 }
