@@ -2,3 +2,12 @@
     position: relative;
     bottom: 32rem;
 }
+
+.line{
+    z-index: -1;
+
+}
+
+.cir{
+    z-index: 1;
+}
