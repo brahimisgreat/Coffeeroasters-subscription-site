@@ -5,7 +5,7 @@ import truck from "../../../assets/home/desktop/icon-truck.svg";
 
 export const Whychoose = () => {
   return (
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center lg:h-1/2">
       <div className="why flex flex-col items-center px-7 pt-16 gap-6 md:px-1 md:h- ">
         <h3 className="text-3xl font-black ">Why choose us?</h3>
         <p className="opacity-80 text-center md:w-9/12 lg:w-5/12 leadin">
