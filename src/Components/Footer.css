@@ -1,6 +1,25 @@
 .footer{
     background: #2C343E;
-    width: 327px;
-    height: 346px;
-    margin-bottom: 1000px;
+    width:93vw;
+   min-height: 346px;
+}
+
+
+@media(min-width: 768px){
+    .footer{
+        min-height: 276px;
+    }
+}
+
+
+@media(min-width: 1024px){
+    .footer{
+        min-width: 100vw;
+        min-height: 126px;
+    }
+
+    .footerBaby{
+        width: 100vw;
+        gap: 100px;
+    }
 }
