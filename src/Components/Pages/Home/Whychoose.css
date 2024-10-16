@@ -13,12 +13,15 @@
 }
 
 .dothis{
-  bottom: 30rem;
+  height: fit-content;
+  top: 176rem;
 }
 
 .why{
   height: 1000px;
 }
+
+
 
 
 
@@ -32,6 +35,18 @@
   }
 
   .dothis{
-    bottom: 20rem;
+    top: 139rem;
+  }
+
+  .death{
+    max-height: 580px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .dothis{
+    top: 101rem;
+    
   }
 }

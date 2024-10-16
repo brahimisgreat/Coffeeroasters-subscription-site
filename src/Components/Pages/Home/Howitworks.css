@@ -1,5 +1,6 @@
 .howitworks{
     position: relative;
+    margin-top: 40rem;
 }
 
 .line{
@@ -9,4 +10,17 @@
 
 .cir{
     z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .howitworks{
+        margin-top: 20rem;
+    }
+}
+
+
+@media(min-width: 1024px){
+    .howitworks{
+        margin-top: 8rem;
+    }
 }
