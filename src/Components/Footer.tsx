@@ -9,7 +9,7 @@ export const Footer = () => {
 
   
   return (
-    <footer className="footer flex justify-center  mb-10 mt-16 ">
+    <footer className="footer flex justify-center  mb-0 mt-16 ">
       <div className="footerBaby flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-20 ">
         <div className="footer__logo ">
           <img src={logo} className=" w-52 h-6" alt="coffeeroasters logo" />
