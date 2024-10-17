@@ -7,5 +7,13 @@
 
 
 @media(min-width: 768px){
- 
+    .aboutinfo{
+        background: url("../../../assets/about/tablet/image-hero-whitecup.jpg") no-repeat center center/cover;
+    }
+}
+
+@media(min-width: 1024px){
+    .aboutinfo{
+        background: url("../../../assets/about/desktop/image-hero-whitecup.jpg") no-repeat center center/cover;
+    }
 }

@@ -4,14 +4,14 @@ import hero from "../../../assets/about/mobile/image-commitment.jpg";
 
 export const OurCommitment = () => {
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8 md:flex-row md:gap-12 lg:justify-evenly ">
       <div>
-        <img className="h-96 w-full rounded-lg" src={hero} />
+        <img className="hero h-96 w-full rounded-lg md:w-72 md:h-full " src={hero} />
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 lg:justify-center ">
         <h2 className="text-black text-4xl font-bold">Our commitment</h2>
-        <p className="text-black opacity-80 text-center">
+        <p className="oc text-black opacity-80 text-center md:w-80 md:text-left ">
           We’re built on a simple mission and a commitment to doing good along
           the way. We want to make it easy for you to discover and brew the
           world’s best coffee at home. It all starts at the source. To locate
