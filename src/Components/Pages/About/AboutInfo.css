@@ -1,0 +1,11 @@
+.aboutinfo{
+    background: url("../../../assets/about/mobile/image-hero-whitecup.jpg") no-repeat center center/cover;
+    height: 400px;
+    border-radius: 10px;
+   
+}
+
+
+@media(min-width: 768px){
+ 
+}
