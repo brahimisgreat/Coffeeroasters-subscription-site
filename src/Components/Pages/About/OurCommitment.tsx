@@ -5,7 +5,7 @@ import herolg from '../../../assets/about/desktop/image-commitment.jpg'
 
 export const OurCommitment = () => {
   return (
-    <section className="flex flex-col gap-8 md:flex-row md:gap-12  lg:justify-center lg:gap-20 lg:mb-20
+    <section className="flex  flex-col gap-8 md:flex-row md:gap-12  lg:justify-center lg:gap-20 md:mb-10
     ">
       <div>
         <img className="hero h-96 w-full rounded-lg md:w-72 md:h-full hidden" src={hero} />

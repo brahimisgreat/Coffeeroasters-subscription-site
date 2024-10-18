@@ -2,6 +2,7 @@ import React from 'react'
 import { AboutInfo } from './AboutInfo'
 import { OurCommitment } from './OurCommitment'
 import { Quality } from './Quality'
+import { Ourhead } from './Ourhead'
 
 export const About = () => {
   return (
@@ -9,6 +10,7 @@ export const About = () => {
         <AboutInfo />
         <OurCommitment />
         <Quality />
+        <Ourhead />
 
     </main>
   )
