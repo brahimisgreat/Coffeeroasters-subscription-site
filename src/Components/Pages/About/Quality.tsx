@@ -8,7 +8,7 @@ import './Quality.css'
 export const Quality = () => {
   return (
     <section className="quality relative flex flex-col justify-end gap-2 md:w-full ">
-      <div className="relative bottom-16 md:flex md:flex-col lg:w-2/4 lg:-top-44">
+      <div className="relative bottom-16 md:flex md:flex-col lg:w-2/4 lg:-top-44 ">
         <h3 className="text-3xl text-center font-bold mb-10 ">Uncompromising quality</h3>
         <p className="text-center opacity-80 md:w-9/12  md:self-center">
           Although we work with growers who pay close attention to all stages of
@@ -20,7 +20,7 @@ export const Quality = () => {
         </p>
       </div>
 
-      <div className="absolute -top-14 right-9 md:left-14 md:-top-28 lg:left-2/3">
+      <div className="absolute -top-14 right-9 md:left-14 md:-top-28 lg:left-1/2 lg:-top-10">
         <img src={hero} className="w-64 rounded-lg md:hidden" />
         <img src={heromd} className=" rounded-lg hidden md:block lg:hidden" />
         <img src={herolg} className=" rounded-lg hidden md:hidden lg:block" />
