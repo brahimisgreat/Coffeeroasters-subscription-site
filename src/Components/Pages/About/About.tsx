@@ -5,7 +5,7 @@ import { Quality } from './Quality'
 
 export const About = () => {
   return (
-    <main className='w-full flex flex-col gap-24'>
+    <main className='w-full flex flex-col gap-40'>
         <AboutInfo />
         <OurCommitment />
         <Quality />
