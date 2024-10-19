@@ -10,7 +10,7 @@ export const Header = () => {
   console.log(isOpen);
 
   return (
-    <nav className="header flex 
+    <nav className="header flex
      w-full justify-between">
       <div className="logo">
         <img className="header-logo relative z-10 md:h-6 md:w-60" src={logo} alt="logo" />
@@ -24,7 +24,7 @@ export const Header = () => {
         onClick={() => setIsOpen(!isOpen)}
       />
 
-      <ul className={isOpen ? "nav-links md:h-6  " : "hidden"}>
+      <ul className={isOpen ? "nav-links md:h-6  " : "hidden  md:block "}>
         <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0 md:text-gray-600  ">
         <Link to='/'> <li className="text-2xl md:text-xs">Home</li></Link> 
         <Link to='/about' ><li className="text-2xl md:text-xs">About Us</li></Link> 
