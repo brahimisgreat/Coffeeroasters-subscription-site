@@ -1,0 +1,17 @@
+.cp{
+    background: url('../../../assets/plan/mobile/image-hero-blackcup.jpg') no-repeat  center/cover;
+    border: solied 1px red;
+}
+
+
+@media (min-width: 768px) {
+    .cp{
+        background: url('../../../assets/plan/tablet/image-hero-blackcup.jpg') no-repeat  center/cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cp{
+        background: url('../../../assets/plan/desktop/image-hero-blackcup.jpg') no-repeat  center/cover;
+    }
+}

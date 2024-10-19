@@ -4,6 +4,7 @@ import { Header } from './Components/Header'
 import { Routes, Route } from 'react-router-dom'
 import { Footer } from './Components/Footer'
 import { About } from './Components/Pages/About/About'
+import { Subscribe } from './Components/Pages/Subscribe/Subscribe'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/subscribe' element={<Subscribe/>} />
       </Routes>
       <Footer />
       <div className='h-72 w-full '>ddsdss</div>
