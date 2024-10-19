@@ -6,14 +6,14 @@ import australia from '../../../assets/about/desktop/illustration-australia.svg'
 
 export const Ourhead = () => {
   return (
-    <section className='flex flex-col items-center border border-black w-full gap-20'>
+    <section className='ourhead flex flex-col items-center border border-black lg:items-start   gap-20'>
 
-        <div><h3 className='  text-gray-500 text-3xl font-bold  md:border border-black'>Our headquarters</h3></div>
+        <div><h3 className='  text-gray-500 text-3xl font-bold  '>Our headquarters</h3></div>
 
-        <div className='flex flex-col gap-28 md:flex-row  md:items-center md:justify-center'>
+        <div className='flex flex-col gap-28 md:flex-row  md:items-center md:justify-center '>
             <div className='flex flex-col items-center justify-center gap-6 md:items-center md:justify-center'>
-                <img src={uk} className=''/>
-                <h3 className='text-3xl text-gray-800 font-bold'>United Kingdom</h3>
+                <img src={uk} className='lg:text-left border border-black lg:relative right-24'/>
+                <h3 className='text-3xl text-gray-800 font-bold w-26 '>United Kingdom</h3>
                 <div className='text-gray-800 flex flex-col items-center gap-2'>
                     <span >68 Asfordby Rd</span>
                     <span>Alcaston</span>

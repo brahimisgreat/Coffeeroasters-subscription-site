@@ -1,0 +1,9 @@
+.ourhead{
+    width: 90vw;
+}
+
+@media (min-width: 768px) {
+    .ourhead{
+        width: 90vw;
+    }
+}
