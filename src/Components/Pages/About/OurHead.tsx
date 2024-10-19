@@ -6,25 +6,25 @@ import australia from '../../../assets/about/desktop/illustration-australia.svg'
 
 export const Ourhead = () => {
   return (
-    <section className='ourhead flex flex-col items-center border border-black lg:items-start   gap-20'>
+    <section className='ourhead flex flex-col items-center  lg:items-start   gap-20'>
 
         <div><h3 className='  text-gray-500 text-3xl font-bold  '>Our headquarters</h3></div>
 
         <div className='flex flex-col gap-28 md:flex-row  md:items-center md:justify-center '>
             <div className='flex flex-col items-center justify-center gap-6 md:items-center md:justify-center'>
-                <img src={uk} className='lg:text-left border border-black lg:relative right-24'/>
+                <img src={uk} className='lg:text-left  lg:relative lg:right-24'/>
                 <h3 className='text-3xl text-gray-800 font-bold w-26 '>United Kingdom</h3>
-                <div className='text-gray-800 flex flex-col items-center gap-2'>
-                    <span >68 Asfordby Rd</span>
+                <div className='text-gray-800 flex flex-col items-center w-full  lg:items-start gap-2'>
+                    <span className='' >68 Asfordby Rd</span>
                     <span>Alcaston</span>
                     <span>SY61YA</span>
                     <span>+44 1241 918425</span>
                 </div>
             </div>
             <div className='flex flex-col items-center gap-6'>
-                <img src={canada} className=''/>
-                <h3 className='text-3xl text-gray-800 font-bold'>Canada</h3>
-                <div className='text-gray-800 flex flex-col items-center gap-2'>
+                <img src={canada} className=' lg:relative lg:right-16'/>
+                <h3 className='text-3xl text-gray-800 font-bold  lg:relative lg:right-7'>Canada</h3>
+                <div className='text-gray-800 flex flex-col items-center gap-2 w-full  lg:items-start'>
                     <span >1528 Eglinton Avenue</span>
                     <span>Toronto</span>
                     <span>Ontario M4P 1A6</span>
@@ -32,9 +32,9 @@ export const Ourhead = () => {
                 </div>
             </div>
             <div className='flex flex-col items-center gap-6'>
-                <img src={australia} className=''/>
+                <img src={australia} className='lg:relative lg:right-10'/>
                 <h3 className='text-3xl text-gray-800 font-bold'>Australia</h3>
-                <div className='text-gray-800 flex flex-col  md:text-left gap-2'>
+                <div className='text-gray-800 flex flex-col items-center  md:text-left gap-2 w-full  lg:items-start '>
                     <span className='md:text-left'>36 Swanston Street</span>
                     <span className='md:text-left'>Kewell</span>
                     <span>Victoria</span>
