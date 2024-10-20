@@ -4,8 +4,13 @@ import "./PickUrPlan.css";
 export const PickUrPlan = () => {
   return (
     <div className="pup rounded-lg py-20 ">
-      <div className="hidden"></div>
-      <div className="flex flex-col items-center gap-16 md:flex-row md:w-10/12  md:h-80  ">
+      <div className="hidden k md:relative md:bottom-24 md:flex md:w-2/3  md:justify-between md:left-10">
+        <div className="ball"></div>
+        <div className="ball"></div>
+        <div className="ball"></div>
+        <div className="line"></div>
+      </div>
+      <div className="flex flex-col items-center gap-16 md:flex-row md:w-10/12  md:h-80  md:ml-10  ">
 
         <div className="flex flex-col items-center gap-6 w-96  md:items-start md:justify-center h-80 ">
           <h2 className="num text-7xl font-bold  md:w-full ">
