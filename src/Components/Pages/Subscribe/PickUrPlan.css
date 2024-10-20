@@ -2,8 +2,19 @@
     background: #2c343e;
     min-height: 1028px;
     width: 100vw;
-}
+    display: flex;
+    justify-content: center;}
 
 .num{
     color:#fdd6ba ;
+}
+
+@media(min-width: 768px){
+    .box{
+        height: 350px;
+    }
+
+    .pup{
+        min-height: 640px;
+    }
 }
