@@ -2,11 +2,11 @@
   height: 100vh;
   background: #FEFCF7;
   width: 327px;
-  margin: 0 auto;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
   
 }
 

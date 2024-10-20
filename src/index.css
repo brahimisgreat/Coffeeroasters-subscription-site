@@ -13,3 +13,9 @@ body {
   color:white;
   font-family: 'Fraunces', serif;
 }
+
+#root{
+  display: flex;
+  justify-content: center;
+
+}
