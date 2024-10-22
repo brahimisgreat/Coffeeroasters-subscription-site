@@ -3,8 +3,8 @@ import "./PickUrPlan.css";
 
 export const PickUrPlan = () => {
   return (
-    <div className="pup rounded-lg py-20  ">
-      <div className="hidden k md:relative md:bottom-24 md:flex md:w-2/3  md:justify-between md:left-10 lg:w-4/6 lg:left-28">
+    <div className="pup rounded-lg py-20   ">
+      <div className="hidden k md:relative md:bottom-24 md:flex md:w-2/3  md:justify-between md:left-10 lg:w-4/6 lg:left-28 lg:bottom-16">
         <div className="ball"></div>
         <div className="ball"></div>
         <div className="ball"></div>

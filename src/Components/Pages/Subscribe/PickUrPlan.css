@@ -30,7 +30,7 @@
   }
 
   .line {
-    width: 547px;
+    width: 93%;
     color: white;
     border-top: #fdd6ba 2px solid;
     z-index: 1;
@@ -43,7 +43,7 @@
 @media (min-width: 1024px) {
  
 .line{
-    width: 96%
+  width: 96%;
 }
  
 }
