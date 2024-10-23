@@ -11,5 +11,11 @@
     border-radius: 8px;
     background: #0E8784;
     padding: 30px;
-    color: ;
+}
+
+
+@media(min-width: 768px){
+    .qb{
+        width: 100%;
+    }
 }

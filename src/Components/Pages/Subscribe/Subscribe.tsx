@@ -11,6 +11,14 @@ export const Subscribe = () => {
         <CreatePlan />
         <PickUrPlan />
         <DrinkCoffee />
+
+        <div>
+          <div >
+            <h4>Order Summary</h4>
+            <p>“I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”</p>
+          </div>
+          <button className='btn'>Create your plan</button>
+        </div>
     </div>
   )
 }

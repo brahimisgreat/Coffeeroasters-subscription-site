@@ -7,7 +7,7 @@ export const DrinkCoffee = () => {
   console.log(data[0])
 
   return (
-    <div className='flex flex-col gap-20'>
+    <div className='flex flex-col gap-20 border border-black md:w-full'>
       {data.map((item) => {
         return <QuestionButtons question={item.question} type={item.answers} />
       })}

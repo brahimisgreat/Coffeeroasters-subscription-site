@@ -12,7 +12,7 @@ export const QuestionButtons = ({question, type}) => {
 
   return (
     <div className="qb flex flex-col items-center justify-center gap-10">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-10 md:w-full">
         <h2 className="text-gray-600 text-3xl font-bold">
           {question}
         </h2>
@@ -22,7 +22,7 @@ export const QuestionButtons = ({question, type}) => {
         </button>
       </div>
 
-<div className={!open? "flex flex-col gap-6" : "hidden"}>
+<div className={!open? "flex flex-col gap-6 md:flex-row" : "hidden"}>
       <div className={active === 1? "greenblock w-full h-36" : "block w-full h-36"} onClick={()=> setActive(1)}>
         <button className={active ===1? "text-white" : "text-slate-800"}>
             <h3 className="text-2xl font-bold text-left mb-2" >{type[0].type}</h3>
