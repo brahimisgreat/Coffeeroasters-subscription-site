@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import arrow from "../../../assets/plan/desktop/icon-arrow.svg";
 import "./QuestionButtons.css";
 
-export const QuestionButtons = ({question}) => {
+export const QuestionButtons = ({question, type}) => {
   const [open, setOpen] = useState(true);
   const [active, setActive] = useState(true);
+  console.log(type)
 
-  console.log(open);
 
   return (
     <div className="qb flex flex-col items-center justify-center gap-10">
@@ -22,7 +22,7 @@ export const QuestionButtons = ({question}) => {
 
       <div className="block w-full h-36">
         <button className="text-slate-800">
-            <h3 className="text-2xl font-bold text-left mb-2" >{"Capssule"}</h3>
+            <h3 className="text-2xl font-bold text-left mb-2" >{type[0].type}</h3>
             <p className="text-left">{'Compatible with Nespresso systems and similar brewers'}</p>
         </button>
       </div>

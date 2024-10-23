@@ -4,11 +4,12 @@ import { data } from '../../../data'
 
 export const DrinkCoffee = () => {
 
-  console.log(data)
+  console.log(data[0])
+
   return (
     <div>
       {data.map((item) => {
-        return <QuestionButtons question={item.question} />
+        return <QuestionButtons question={item.question} type={item.answers} />
       })}
     </div>
   )
