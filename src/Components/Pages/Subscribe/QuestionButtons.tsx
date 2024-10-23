@@ -4,8 +4,10 @@ import "./QuestionButtons.css";
 
 export const QuestionButtons = ({question, type}) => {
   const [open, setOpen] = useState(true);
-  const [active, setActive] = useState(true);
-  console.log(type)
+  const [active, setActive] = useState(0);
+  const [active2, setActive2] = useState(1);
+  const [active3, setActive3] = useState(2);
+  console.log(active)
 
 
   return (
@@ -20,19 +22,19 @@ export const QuestionButtons = ({question, type}) => {
         </button>
       </div>
 
-      <div className="block w-full h-36">
+      <div className="block w-full h-36" onClick={()=> setActive(1)}>
         <button className="text-slate-800">
             <h3 className="text-2xl font-bold text-left mb-2" >{type[0].type}</h3>
             <p className="text-left">{type[0].desc}</p>
         </button>
       </div>
-      <div className="block w-full h-36">
+      <div className="block w-full h-36" onClick={()=> setActive(2)}>
         <button className="text-slate-800">
-            <h3 className="text-2xl font-bold text-left mb-2" >{type[1].type}</h3>
+            <h3 className="text-2xl font-bold text-left mb-2"  >{type[1].type}</h3>
             <p className="text-left">{type[1].desc}</p>
         </button>
       </div>
-      <div className="block w-full h-36">
+      <div className="block w-full h-36" onClick={()=> setActive(3)}>
         <button className="text-slate-800">
             <h3 className="text-2xl font-bold text-left mb-2" >{type[2].type}</h3>
             <p className="text-left">{type[2].desc}</p>
