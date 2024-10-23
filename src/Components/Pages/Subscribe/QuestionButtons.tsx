@@ -1,12 +1,10 @@
-import React, { useState } from "react";
 import arrow from "../../../assets/plan/desktop/icon-arrow.svg";
 import "./QuestionButtons.css";
+import { useState } from "react";
 
 export const QuestionButtons = ({question, type}) => {
   const [open, setOpen] = useState(true);
   const [active, setActive] = useState(0);
-  const [active2, setActive2] = useState(1);
-  const [active3, setActive3] = useState(2);
   console.log(active)
 
 
@@ -23,21 +21,21 @@ export const QuestionButtons = ({question, type}) => {
       </div>
 
 <div className={!open? "flex flex-col gap-6 md:flex-row" : "hidden"}>
-      <div className={active === 1? "greenblock w-full h-36" : "block w-full h-36"} onClick={()=> setActive(1)}>
+      <div className={active === 1? "greenblock w-full h-36  md:h-auto  "  : "block w-full h-36 md:h-auto"} onClick={()=> setActive(1)}>
         <button className={active ===1? "text-white" : "text-slate-800"}>
             <h3 className="text-2xl font-bold text-left mb-2" >{type[0].type}</h3>
             <p className="text-left">{type[0].desc}</p>
         </button>
       </div>
 
-      <div className={active === 2? "greenblock w-full h-36" : "block w-full h-36"} onClick={()=> setActive(2)}>
+      <div className={active === 2? "greenblock w-full h-36  md:h-auto" : "block w-full h-36 md:h-auto"} onClick={()=> setActive(2)}>
         <button className={active ===2? "text-white" : "text-slate-800"}>
             <h3 className="text-2xl font-bold text-left mb-2"  >{type[1].type}</h3>
             <p className="text-left">{type[1].desc}</p>
         </button>
       </div>
 
-      <div className={active === 3? "greenblock w-full h-36" : "block w-full h-36"} onClick={()=> setActive(3)}>
+      <div className={active === 3? "greenblock w-full h-36  md:h-auto" : "block w-full h-36 md:h-auto"} onClick={()=> setActive(3)}>
         <button className={active ===3? "text-white" : "text-slate-800"}>
             <h3 className="text-2xl font-bold text-left mb-2" >{type[2].type}</h3>
             <p className="text-left">{type[2].desc}</p>
