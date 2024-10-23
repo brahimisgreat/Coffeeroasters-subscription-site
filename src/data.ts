@@ -1,4 +1,4 @@
-const data = [
+export const data = [
     {
         id: 0,
         question: "How do you drink your coffee?",
@@ -30,22 +30,22 @@ const data = [
 
     },
     {
-        id: 0,
-        question: "How do you drink your coffee?",
+        id: 3,
+        question: "Want us to grind them??",
         answers: [
-            { id: "a", type: "Capsule", desc:"Compatible with Nespresso systems and similar brewers" },
-            { id: "a", type: "Filter", desc:"For pour over or drip methods like Aeropress, Chemex, and V60" },
-            { id: "a", type: "Espresso", desc:"Dense and finely ground beans for an intense, flavorful experience" },
+            { id: 0, type: "Wholebean", desc:"Best choice if you cherish the full sensory experience" },
+            { id: 1, type: "Filter", desc:"For drip or pour-over coffee methods such as V60 or Aeropress" },
+            { id: 2, type: "Cafetiere", desc:"Course ground beans specially suited for french press coffee" },
         ]
 
     },
     {
-        id: 0,
-        question: "How do you drink your coffee?",
+        id: 4,
+        question: "How often should we deliver?",
         answers: [
-            { id: "a", type: "Capsule", desc:"Compatible with Nespresso systems and similar brewers" },
-            { id: "a", type: "Filter", desc:"For pour over or drip methods like Aeropress, Chemex, and V60" },
-            { id: "a", type: "Espresso", desc:"Dense and finely ground beans for an intense, flavorful experience" },
+            { id: 0, type: "Every week", desc:"$7.20 per shipment. Includes free first-class shipping." },
+            { id: 1, type: "Every 2 weeks", desc:"$9.60 per shipment. Includes free priority shipping." },
+            { id: 2, type: "Every month", desc:"$12.00 per shipment. Includes free priority shipping." },
         ]
 
     }

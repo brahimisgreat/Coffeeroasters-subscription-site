@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import arrow from "../../../assets/plan/desktop/icon-arrow.svg";
 import "./QuestionButtons.css";
 
-export const QuestionButtons = () => {
+export const QuestionButtons = ({question}) => {
   const [open, setOpen] = useState(true);
+  const [active, setActive] = useState(true);
 
   console.log(open);
 
@@ -11,7 +12,7 @@ export const QuestionButtons = () => {
     <div className="qb flex flex-col items-center justify-center gap-10">
       <div className="flex items-center justify-between">
         <h2 className="text-gray-600 text-3xl font-bold">
-          {"How do you drink your coffee?"}
+          {question}
         </h2>
 
         <button onClick={() => setOpen(!open)}>
