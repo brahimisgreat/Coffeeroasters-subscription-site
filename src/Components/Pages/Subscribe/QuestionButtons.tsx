@@ -23,7 +23,19 @@ export const QuestionButtons = ({question, type}) => {
       <div className="block w-full h-36">
         <button className="text-slate-800">
             <h3 className="text-2xl font-bold text-left mb-2" >{type[0].type}</h3>
-            <p className="text-left">{'Compatible with Nespresso systems and similar brewers'}</p>
+            <p className="text-left">{type[0].desc}</p>
+        </button>
+      </div>
+      <div className="block w-full h-36">
+        <button className="text-slate-800">
+            <h3 className="text-2xl font-bold text-left mb-2" >{type[1].type}</h3>
+            <p className="text-left">{type[1].desc}</p>
+        </button>
+      </div>
+      <div className="block w-full h-36">
+        <button className="text-slate-800">
+            <h3 className="text-2xl font-bold text-left mb-2" >{type[2].type}</h3>
+            <p className="text-left">{type[2].desc}</p>
         </button>
       </div>
     </div>
