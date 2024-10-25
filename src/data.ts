@@ -1,6 +1,6 @@
 export const data = [
     {
-        id: 0,
+        id: "a",
         question: "How do you drink your coffee?",
         answers: [
             { id: 0, type: "Capsule", desc:"Compatible with Nespresso systems and similar brewers" },
@@ -10,7 +10,7 @@ export const data = [
 
     },
     {
-        id: 1,
+        id: "b",
         question: "What type of coffee?",
         answers: [
             { id: 0, type: "Single Origin", desc:"Distinct, high quality coffee from a specific family-owned farm" },
@@ -20,7 +20,7 @@ export const data = [
 
     },
     {
-        id: 2,
+        id: "c",
         question: "How much would you like?",
         answers: [
             { id: 0, type: "250g", desc:"Perfect for the solo drinker. Yields about 12 delicious cups." },
@@ -30,7 +30,7 @@ export const data = [
 
     },
     {
-        id: 3,
+        id: "d",
         question: "Want us to grind them??",
         answers: [
             { id: 0, type: "Wholebean", desc:"Best choice if you cherish the full sensory experience" },
@@ -40,7 +40,7 @@ export const data = [
 
     },
     {
-        id: 4,
+        id: "e",
         question: "How often should we deliver?",
         answers: [
             { id: 0, type: "Every week", desc:"$7.20 per shipment. Includes free first-class shipping." },

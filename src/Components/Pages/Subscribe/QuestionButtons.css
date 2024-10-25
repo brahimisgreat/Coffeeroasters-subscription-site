@@ -1,6 +1,5 @@
 .qb{
     width: 105%;
-    height: 250px;
 }
 .block{
     border-radius: 8px;
@@ -20,7 +19,10 @@
         width: 100%;
     }
 
-    .block{
+}
 
+@media(min-width: 1024px){
+    .qb{
+        width: 730px;
     }
 }
