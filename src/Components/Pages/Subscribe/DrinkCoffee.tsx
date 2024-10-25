@@ -1,37 +1,29 @@
-import React from 'react'
-import { QuestionButtons } from './QuestionButtons'
-import { data } from '../../../data'
-import { Link } from 'react-router-dom'
+import React from "react";
+import arrow from '../../../assets/plan/desktop/icon-arrow.svg'
+import { useState } from "react";
 
 export const DrinkCoffee = () => {
 
-  console.log(data)
+  const [open , setOpen] = useState(false)
 
   return (
-    <div className='lg:flex lg:flex-row lg:justify-between gap-40'>
-      <div className='hidden lg:flex flex-col text-black gap-8'>
-        <div className='text-2xl opacity-80 font-bold'>
-         <a href='#a' className='flex gap-4' ><span>01</span><span>Preferences</span></a> 
+    <section className="text-black">
+      <div>
+        <div className="flex justify-between gap-10 items-center">
+          <h2 className="text-2xl text-gray-500 font-bold w-56">How do you drink your coffee?</h2>
+          <img  src={arrow}/>
         </div>
-        <div className='text-2xl opacity-80 font-bold'>
-          <a href='#b' className='flex gap-4'><span>02</span><span>Bean Type</span></a> 
-        </div>
-        <div className='text-2xl opacity-80 font-bold'>
-          <a href='#c' className='flex gap-4'><span>03</span><span>Quantity</span></a> 
-        </div>
-        <div className='text-2xl opacity-80 font-bold'>
-          <a href='#d' className='flex gap-4'><span>04</span><span>grind Options</span></a> 
-        </div>
-        <div className='text-2xl opacity-80 font-bold'>
-          <a href='#e' className='flex gap-4'> <span>05</span><span>Deliveries</span></a> 
-        </div>
-      </div>
 
-      <div className='flex flex-col gap-16'>
-      {data.map((item, index) => {
-        return <QuestionButtons key={index} id={item.id} question={item.question} type={item.answers} />
-      })}
+        <div>
+          <button>
+
+          
+            <h3>Step 2</h3>
+            <p>What type of coffee?</p>
+          
+          </button>
+        </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
