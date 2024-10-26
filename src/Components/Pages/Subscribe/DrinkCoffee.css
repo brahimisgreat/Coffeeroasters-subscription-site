@@ -1,0 +1,12 @@
+.butt{
+    width: 320px;
+    background-color: #F4F1EB;
+    padding: 25px;
+}
+
+.greenbutt{
+    width: 320px;
+    background-color: #0E8784;
+    padding: 25px;
+    color: white;
+}
