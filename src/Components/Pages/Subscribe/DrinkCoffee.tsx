@@ -5,13 +5,19 @@ import "./DrinkCoffee.css";
 
 export const DrinkCoffee = () => {
   const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
   const [selected5, setSelected5] = useState("");
   const [selected1, setSelected1] = useState("");
   const [selected2, setSelected2] = useState("");
   const [selected3, setSelected3] = useState("");
   const [selected4, setSelected4] = useState("");
 
-  console.log(selected1 );
+
+
+  
 
   return (
     <section className="text-black flex flex-col gap-20 ">
@@ -24,10 +30,11 @@ export const DrinkCoffee = () => {
             className={!open ? "" : "rotate-180"}
             src={arrow}
             onClick={() => setOpen(!open)}
+            
           />
         </div>
 
-        <div className={open? "flex" : "hidden"}>
+        <div className={open? "flex" : "hidden"} onClick={() => setOpen(!open)}>
           <div className="flex flex-col gap-4" >
             <button className={selected1 ==="capsule"? "greenbutt flex flex-col gap-2":"butt text-black flex flex-col gap-2"} value={selected1} onClick={()=>setSelected1("capsule")}>
               <h3 className="text-2xl font-bold">Capsule</h3>
@@ -56,13 +63,13 @@ export const DrinkCoffee = () => {
             What type of coffee?
           </h2>
           <img
-            className={!open ? "" : "rotate-180"}
+            className={!open2 ? "" : "rotate-180"}
             src={arrow}
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen2(!open2)}
           />
         </div>
 
-        <div className={open ? "flex" : "hidden"}>
+        <div className={open2 ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
             <button  className={selected2 ==="single orgin"? "greenbutt flex flex-col gap-2":"butt text-black flex flex-col gap-2"} value={selected2} onClick={()=> setSelected2("single orgin")}>
               <h3 className="text-2xl font-bold">Single Origin</h3>
@@ -91,13 +98,13 @@ export const DrinkCoffee = () => {
             How much would you like?
           </h2>
           <img
-            className={!open ? "" : "rotate-180"}
+            className={!open3 ? "" : "rotate-180"}
             src={arrow}
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen3(!open3)}
           />
         </div>
 
-        <div className={open ? "flex" : "hidden"}>
+        <div className={open3 ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
             <button className={selected3==='250g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected3} onClick={()=> setSelected3("250g")}>
               <h3 className="text-2xl font-bold">250g</h3>
@@ -126,13 +133,13 @@ export const DrinkCoffee = () => {
             Want us to grind them?
           </h2>
           <img
-            className={!open ? "" : "rotate-180"}
+            className={!open4 ? "" : "rotate-180"}
             src={arrow}
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen4(!open4)}
           />
         </div>
 
-        <div className={open ? "flex" : "hidden"}>
+        <div className={open4 ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
             <button className={selected4 === 'wholebean'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected4} onClick={() => setSelected4("wholebean")}>
               <h3 className="text-2xl font-bold">Wholebean</h3>
@@ -161,13 +168,13 @@ export const DrinkCoffee = () => {
             How often should we deliver?
           </h2>
           <img
-            className={!open ? "" : "rotate-180"}
+            className={!open5 ? "" : "rotate-180"}
             src={arrow}
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen5(!open5)}
           />
         </div>
 
-        <div className={open ? "flex" : "hidden"}>
+        <div className={open5 ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
             <button className={selected5 === 'every week'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected5} onClick={() => setSelected5("every week")}>
               <h3 className="text-2xl font-bold">Every week</h3>
@@ -181,7 +188,7 @@ export const DrinkCoffee = () => {
               $9.60 per shipment. Includes free priority shipping.
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected5 === 'every month'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected5} onClick={() => setSelected5("every month")}>
               <h3 className="text-2xl font-bold">Every month</h3>
               <p className="text-left">
               $12.00 per shipment. Includes free priority shipping.
