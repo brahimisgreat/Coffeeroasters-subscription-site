@@ -105,13 +105,13 @@ export const DrinkCoffee = () => {
               Perfect for the solo drinker. Yields about 12 delicious cups.
               </p>
             </button>
-            <button className={selected3 === '500g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "}>
+            <button className={selected3 === '500g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected3} onClick={() => setSelected3("500g")}>
               <h3 className="text-2xl font-bold">500g</h3>
               <p className="text-left">
               Perfect option for a couple. Yields about 40 delectable cups.
               </p>
             </button>
-            <button className={selected3 === '1000g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} onClick={() => setSelected3("1000g")}>
+            <button className={selected3 === '1000g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected3} onClick={() => setSelected3("1000g")}>
               <h3 className="text-2xl font-bold">1000g</h3>
               <p className="text-left">
               Perfect for offices and events. Yields about 90 delightful cups.
@@ -134,19 +134,19 @@ export const DrinkCoffee = () => {
 
         <div className={open ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected4 === 'wholebean'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected4} onClick={() => setSelected4("wholebean")}>
               <h3 className="text-2xl font-bold">Wholebean</h3>
               <p className="text-left">
               Best choice if you cherish the full sensory experience
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected4 === 'filter'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected4} onClick={() => setSelected4("filter")}>
               <h3 className="text-2xl font-bold">Filter</h3>
               <p className="text-left">
               For drip or pour-over coffee methods such as V60 or Aeropress
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected4 === 'cafetiere'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected4} onClick={() => setSelected4("cafetiere")}>
               <h3 className="text-2xl font-bold">Cafetiere</h3>
               <p className="text-left">
               Course ground beans specially suited for french press coffee
@@ -169,13 +169,13 @@ export const DrinkCoffee = () => {
 
         <div className={open ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected5 === 'every week'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected5} onClick={() => setSelected5("every week")}>
               <h3 className="text-2xl font-bold">Every week</h3>
               <p className="text-left">
               $7.20 per shipment. Includes free first-class shipping.
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected5 === 'every 2 weeks'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected5} onClick={() => setSelected5("every 2 weeks")} >
               <h3 className="text-2xl font-bold">Every 2 weeks</h3>
               <p className="text-left">
               $9.60 per shipment. Includes free priority shipping.
