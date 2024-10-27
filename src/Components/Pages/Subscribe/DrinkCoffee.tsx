@@ -70,13 +70,13 @@ export const DrinkCoffee = () => {
               Distinct, high quality coffee from a specific family-owned farm
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected2 === 'decaf'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected2} onClick={()=> setSelected2("decaf")}>
               <h3 className="text-2xl font-bold">Decaf</h3>
               <p className="text-left">
               Just like regular coffee, except the caffeine has been removed
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected2 === 'blended'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected2} onClick={()=> setSelected2("blended")}>
               <h3 className="text-2xl font-bold">Blended</h3>
               <p className="text-left">
               Combination of two or three dark roasted beans of organic coffees
