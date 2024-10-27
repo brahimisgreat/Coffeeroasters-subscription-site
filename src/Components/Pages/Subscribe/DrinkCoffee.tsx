@@ -20,10 +20,10 @@ export const DrinkCoffee = () => {
   
 
   return (
-    <section className="text-black flex flex-col gap-20 ">
+    <section className="text-black flex flex-col gap-20 border border-black md:w-full ">
       <div className=" flex flex-col gap-10">
-        <div className="flex justify-between gap-10 items-center w-80">
-          <h2 className="text-2xl text-gray-500 font-bold w-56">
+        <div className="flex justify-between gap-10 items-center w-80 md:w-full ">
+          <h2 className="text-2xl text-gray-500 font-bold w-56 md:w-auto md:text-4xl">
             How do you drink your coffee?
           </h2>
           <img
@@ -35,7 +35,7 @@ export const DrinkCoffee = () => {
         </div>
 
         <div className={open? "flex" : "hidden"} onClick={() => setOpen(!open)}>
-          <div className="flex flex-col gap-4" >
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-center" >
             <button className={selected1 ==="capsule"? "greenbutt flex flex-col gap-2":"butt text-black flex flex-col gap-2"} value={selected1} onClick={()=>setSelected1("capsule")}>
               <h3 className="text-2xl font-bold">Capsule</h3>
               <p className="text-left">
@@ -57,9 +57,11 @@ export const DrinkCoffee = () => {
           </div>
         </div>
       </div>
+
+
       <div className=" flex flex-col gap-10">
-        <div className="flex justify-between gap-10 items-center w-80">
-          <h2 className="text-2xl text-gray-500 font-bold w-56">
+        <div className="flex justify-between gap-10 items-center w-80 md:w-full">
+          <h2 className="text-2xl text-gray-500 font-bold w-56 md:text-4xl md:w-full ">
             What type of coffee?
           </h2>
           <img
@@ -70,7 +72,7 @@ export const DrinkCoffee = () => {
         </div>
 
         <div className={open2 ? "flex" : "hidden"}>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <button  className={selected2 ==="single orgin"? "greenbutt flex flex-col gap-2":"butt text-black flex flex-col gap-2"} value={selected2} onClick={()=> setSelected2("single orgin")}>
               <h3 className="text-2xl font-bold">Single Origin</h3>
               <p className="text-left">
@@ -92,9 +94,11 @@ export const DrinkCoffee = () => {
           </div>
         </div>
       </div>
+
+
       <div className=" flex flex-col gap-10">
-        <div className="flex justify-between gap-10 items-center w-80">
-          <h2 className="text-2xl text-gray-500 font-bold w-56">
+        <div className="flex justify-between gap-10 items-center w-80 md:w-full">
+          <h2 className="text-2xl text-gray-500 font-bold w-56 md:text-4xl md:w-full">
             How much would you like?
           </h2>
           <img
@@ -105,7 +109,7 @@ export const DrinkCoffee = () => {
         </div>
 
         <div className={open3 ? "flex" : "hidden"}>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <button className={selected3==='250g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected3} onClick={()=> setSelected3("250g")}>
               <h3 className="text-2xl font-bold">250g</h3>
               <p className="text-left">
@@ -127,9 +131,11 @@ export const DrinkCoffee = () => {
           </div>
         </div>
       </div>
+
+
       <div className=" flex flex-col gap-10">
-        <div className="flex justify-between gap-10 items-center w-80">
-          <h2 className="text-2xl text-gray-500 font-bold w-56">
+        <div className="flex justify-between gap-10 items-center w-80 md:w-full">
+          <h2 className="text-2xl text-gray-500 font-bold w-56 md:text-4xl md:w-full">
             Want us to grind them?
           </h2>
           <img
@@ -140,7 +146,7 @@ export const DrinkCoffee = () => {
         </div>
 
         <div className={open4 ? "flex" : "hidden"}>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <button className={selected4 === 'wholebean'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected4} onClick={() => setSelected4("wholebean")}>
               <h3 className="text-2xl font-bold">Wholebean</h3>
               <p className="text-left">
@@ -162,9 +168,11 @@ export const DrinkCoffee = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col gap-10">
-        <div className="flex justify-between gap-10 items-center w-80">
-          <h2 className="text-2xl text-gray-500 font-bold w-56">
+
+
+      <div className=" flex flex-col gap-10 ">
+        <div className="flex justify-between gap-10 items-center w-80  md:w-full">
+          <h2 className="text-2xl text-gray-500 font-bold w-56 md:text-4xl md:w-full">
             How often should we deliver?
           </h2>
           <img
@@ -175,7 +183,7 @@ export const DrinkCoffee = () => {
         </div>
 
         <div className={open5 ? "flex" : "hidden"}>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <button className={selected5 === 'every week'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected5} onClick={() => setSelected5("every week")}>
               <h3 className="text-2xl font-bold">Every week</h3>
               <p className="text-left">

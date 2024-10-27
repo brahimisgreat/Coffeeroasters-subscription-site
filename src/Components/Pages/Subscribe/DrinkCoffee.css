@@ -10,3 +10,14 @@
     padding: 25px;
     color: white;
 }
+
+
+@media (min-width: 768px) {
+    .butt{
+        width: 100%;
+    }
+
+    .greenbutt{
+        width: 100%;
+    }
+}
