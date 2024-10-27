@@ -12,7 +12,7 @@ export const Subscribe = () => {
         <PickUrPlan />
         <DrinkCoffee />
 
-        <div>
+        <div className='last border border-black text-black'>
           <div >
             <h4>Order Summary</h4>
             <p>“I drink my coffee as Filter, with a Decaf type of bean. 250g ground ala Cafetiére, sent to me Every Week.”</p>
