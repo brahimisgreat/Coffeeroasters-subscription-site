@@ -99,19 +99,19 @@ export const DrinkCoffee = () => {
 
         <div className={open ? "flex" : "hidden"}>
           <div className="flex flex-col gap-4">
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected3==='250g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} value={selected3} onClick={()=> setSelected3("250g")}>
               <h3 className="text-2xl font-bold">250g</h3>
               <p className="text-left">
               Perfect for the solo drinker. Yields about 12 delicious cups.
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected3 === '500g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "}>
               <h3 className="text-2xl font-bold">500g</h3>
               <p className="text-left">
               Perfect option for a couple. Yields about 40 delectable cups.
               </p>
             </button>
-            <button className="butt text-black flex flex-col gap-2 ">
+            <button className={selected3 === '1000g'? "greenbutt flex flex-col gap-2" :"butt text-black flex flex-col gap-2 "} onClick={() => setSelected3("1000g")}>
               <h3 className="text-2xl font-bold">1000g</h3>
               <p className="text-left">
               Perfect for offices and events. Yields about 90 delightful cups.
