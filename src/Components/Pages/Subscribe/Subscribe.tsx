@@ -27,6 +27,13 @@ export const Subscribe = () => {
           </div>
           <button className='btn text-xl'>Create your plan</button>
         </div>
+
+        <div className='os-container text-black '>
+          <h3 className='os  text-white font-bold  rounded-lg  h-24 text-3xl flex items-center pl-3'>Order Summary</h3>
+          <p>“I drink my coffee as <span className='choice'>{selected1}</span>, with a <span className='choice'>{selected2}</span> type of bean. <span className='choice'>{selected3}</span> ground ala <span className='choice'>{selected4}</span>, sent to me {selected5}.”</p>
+          <p className='leading-6'>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+          <button className='btn text-white'>Checkout -$14.00 / mo</button>
+        </div>
     </div>
   )
 }
