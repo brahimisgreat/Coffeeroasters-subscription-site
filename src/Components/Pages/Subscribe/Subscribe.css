@@ -14,3 +14,26 @@ background: #2C343E;
     color: #0E8784;
     text-transform: capitalize;
 }
+
+
+.btn{
+    border-radius: 6px;
+background: #0E8784;
+width: 217px;
+height: 56px;
+flex-shrink: 0;
+}
+
+
+@media(min-width: 1024px){
+    .tinn{
+        width: 800px;
+        position: relative;
+        left: 40px;
+        
+    }
+
+    .btn{
+        margin-left: 500px;
+    }
+}
