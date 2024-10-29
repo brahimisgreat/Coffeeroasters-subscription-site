@@ -9,3 +9,8 @@ width: 392px;
 flex-shrink: 0;
 background: #2C343E;
 }
+
+.choice{
+    color: #0E8784;
+    text-transform: capitalize;
+}

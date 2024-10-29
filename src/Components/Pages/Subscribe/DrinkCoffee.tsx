@@ -3,28 +3,67 @@ import arrow from "../../../assets/plan/desktop/icon-arrow.svg";
 import { useState } from "react";
 import "./DrinkCoffee.css";
 
-export const DrinkCoffee = ({selected5}) => {
+export const DrinkCoffee = ({
+  setSelected1,
+  selected1,
+  setSelected2,
+  selected2,
+  setSelected3,
+  setSelected4,
+  setSelected5,
+  selected3,
+  selected4,
+  selected5,
+}: {
+  setSelected1: React.Dispatch<React.SetStateAction<string>>;
+  selected1: string;
+  setSelected2: React.Dispatch<React.SetStateAction<string>>;
+  selected2: string;
+  setSelected3: React.Dispatch<React.SetStateAction<string>>;
+  selected3: string;
+  setSelected4: React.Dispatch<React.SetStateAction<string>>;
+  selected4: string;
+  setSelected5: React.Dispatch<React.SetStateAction<string>>;
+  selected5: string;
+}) => {
   const [open, setOpen] = useState(false);
-  const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
   const [open5, setOpen5] = useState(false);
-  // const [selected5, setSelected5] = useState("");
-  const [selected1, setSelected1] = useState("");
-  const [selected2, setSelected2] = useState("");
-  const [selected3, setSelected3] = useState("");
-  const [selected4, setSelected4] = useState("");
+
+  console.log(selected1, selected2, selected3, selected4, selected5);
 
   return (
     <section className="text-black flex flex-col gap-20 md:w-full lg:flex-row  ">
-
       <div className="hidden lg:text-2xl lg:font-bold lg:flex lg:flex-col ">
-        <a href="#hdc" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">01 <span className="ml-4 text-slate-700">perferences</span> </a>
-        <a href="#wtc" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">02 <span className="ml-4 text-slate-700">Bean Type</span> </a>
-        <a href="#hwl" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">03 <span className="ml-4 text-slate-700">Quantity</span> </a>
-        <a href="#wgt" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">04 <span className="ml-4 text-slate-700">Grind Option</span> </a>
-        <a href="#hsd" className="text-gray-500  w-60  py-4 ">05 <span className="ml-4 text-slate-700">Deliveries</span> </a>
+        <a
+          href="#hdc"
+          className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 "
+        >
+          01 <span className="ml-4 text-slate-700">perferences</span>{" "}
+        </a>
+        <a
+          href="#wtc"
+          className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 "
+        >
+          02 <span className="ml-4 text-slate-700">Bean Type</span>{" "}
+        </a>
+        <a
+          href="#hwl"
+          className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 "
+        >
+          03 <span className="ml-4 text-slate-700">Quantity</span>{" "}
+        </a>
+        <a
+          href="#wgt"
+          className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 "
+        >
+          04 <span className="ml-4 text-slate-700">Grind Option</span>{" "}
+        </a>
+        <a href="#hsd" className="text-gray-500  w-60  py-4 ">
+          05 <span className="ml-4 text-slate-700">Deliveries</span>{" "}
+        </a>
       </div>
 
       <div className="text-black flex flex-col gap-20 md:w-full  ">
@@ -211,7 +250,6 @@ export const DrinkCoffee = ({selected5}) => {
             </div>
           </div>
         </div>
-        
 
         <div id="wgt" className=" flex flex-col gap-10">
           <div className="flex justify-between gap-10 items-center w-80 md:w-full">
