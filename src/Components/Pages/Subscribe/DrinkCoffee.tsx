@@ -3,14 +3,14 @@ import arrow from "../../../assets/plan/desktop/icon-arrow.svg";
 import { useState } from "react";
 import "./DrinkCoffee.css";
 
-export const DrinkCoffee = () => {
+export const DrinkCoffee = ({selected5}) => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
   const [open5, setOpen5] = useState(false);
-  const [selected5, setSelected5] = useState("");
+  // const [selected5, setSelected5] = useState("");
   const [selected1, setSelected1] = useState("");
   const [selected2, setSelected2] = useState("");
   const [selected3, setSelected3] = useState("");
@@ -19,7 +19,7 @@ export const DrinkCoffee = () => {
   return (
     <section className="text-black flex flex-col gap-20 md:w-full lg:flex-row  ">
 
-      <div className="text-2xl font-bold flex flex-col ">
+      <div className="hidden lg:text-2xl lg:font-bold lg:flex lg:flex-col ">
         <a href="#hdc" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">01 <span className="ml-4 text-slate-700">perferences</span> </a>
         <a href="#wtc" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">02 <span className="ml-4 text-slate-700">Bean Type</span> </a>
         <a href="#hwl" className="text-gray-500 border-gray-400 border-b-2 w-60  py-4 ">03 <span className="ml-4 text-slate-700">Quantity</span> </a>

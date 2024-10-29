@@ -1,0 +1,11 @@
+.last{
+    color: #FFF;
+font-family: "Fraunces 9pt";
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 40px; /* 166.667% */
+width: 392px;
+flex-shrink: 0;
+background: #2C343E;
+}
