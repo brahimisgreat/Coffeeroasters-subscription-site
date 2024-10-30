@@ -16,6 +16,7 @@
   width: 100vw;
   background-color: black;
   opacity: 0.5;
+  position: fixed;
 }
 
 @media(min-width: 768px){

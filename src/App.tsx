@@ -19,7 +19,7 @@ function App() {
         <Route path='/subscribe' element={<Subscribe setCheckout={setCheckout}/>} />
       </Routes>
       <Footer />
-      <div className='modal w-full text-black absolute   '>ffdsffd</div>
+      <div className='modal w-full text-black  '>ffdsffd</div>
 
     </div>
   )
