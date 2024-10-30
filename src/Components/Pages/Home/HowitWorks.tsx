@@ -1,5 +1,6 @@
 import React from "react";
 import "./Howitworks.css";
+import { Link } from "react-router-dom";
 
 export const HowitWorks = () => {
   return (
@@ -39,7 +40,9 @@ export const HowitWorks = () => {
           </p>
         </div>
       </div>
-      <button className="bg-teal-600 w-56 h-14 rounded-md md:self-start text-xl text-white font-black lg:ml-36">Create your plan</button>
+      <Link to="/subscribe">
+      <button className="bg-teal-600 hover:bg-teal-300 w-56 h-14 rounded-md md:self-start text-xl text-white font-black lg:ml-36">Create your plan</button>
+      </Link>
     </div>
   );
 };

@@ -26,9 +26,9 @@ export const Header = () => {
 
       <ul className={isOpen ? "nav-links md:h-6  " : "hidden  md:block "}>
         <div className="flex flex-col gap-4 mb-96 items-center  md:flex-row md:mb-0 md:text-gray-600  ">
-        <Link to='/'> <li className="text-2xl md:text-xs">Home</li></Link> 
-        <Link to='/about' ><li className="text-2xl md:text-xs">About Us</li></Link> 
-        <Link to='/subscribe'> <li className="text-2xl md:text-xs ">Create Your Plan</li></Link> 
+        <Link to='/' onClick={()=> setIsOpen(false)}> <li className="text-2xl md:text-xs">Home</li></Link> 
+        <Link to='/about' onClick={()=> setIsOpen(false)}><li className="text-2xl md:text-xs">About Us</li></Link> 
+        <Link to='/subscribe' onClick={()=> setIsOpen(false)}> <li className="text-2xl md:text-xs ">Create Your Plan</li></Link> 
         </div>
       </ul>
     </nav>
