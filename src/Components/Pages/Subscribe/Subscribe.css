@@ -29,12 +29,19 @@ flex-shrink: 0;
 }
 
 .os-container{
-    height: 507px;
+    height: 567px;
     width: 80vw;
+    background-color:#FEFCF7 ;
+    z-index: 1;
+    position: fixed;
 }
 
-.black{
-   
+
+@media(min-width: 768px){
+    .os-p1{
+        border: solid 1px #000;
+        width: 309px;
+    }
 }
 
 

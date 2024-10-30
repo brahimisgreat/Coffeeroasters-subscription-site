@@ -8,7 +8,7 @@ import { Subscribe } from './Components/Pages/Subscribe/Subscribe'
 import { useState } from 'react'
 
 function App() {
-  const [checkout, setCheckout] = useState(false) 
+  const [checkout, setCheckout] = useState(true) 
 
   return (
     <div className='App'>
@@ -16,10 +16,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/subscribe' element={<Subscribe setCheckout={setCheckout}/>} />
+        <Route path='/subscribe' element={<Subscribe setCheckout={setCheckout} checkout={checkout} />} />
       </Routes>
       <Footer />
-      <div className='modal w-full text-black  '>ffdsffd</div>
+      <div className={checkout? 'modal w-full text-black' : 'hidden'}></div>
 
     </div>
   )
