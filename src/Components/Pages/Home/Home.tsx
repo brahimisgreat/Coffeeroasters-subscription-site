@@ -1,6 +1,5 @@
 import { CreateYourPlan } from './CreateYourPlan'
 import { Ourcollection } from './Ourcollection'
-import './Home.css'
 import { Whychoose } from './Whychoose'
 import { HowitWorks } from './HowitWorks'
 export const Home = () => {
