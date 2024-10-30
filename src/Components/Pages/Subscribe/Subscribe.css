@@ -39,9 +39,17 @@ flex-shrink: 0;
 
 @media(min-width: 768px){
     .os-p1{
-        border: solid 1px #000;
-        width: 309px;
+        width: 450px;
     }
+
+    .os-p2{
+        width: 450px;
+
+}
+
+.spazz{
+    right: 430px;
+}
 }
 
 
@@ -55,5 +63,18 @@ flex-shrink: 0;
 
     .btn{
         margin-left: 500px;
+    }
+
+    .os-container{
+        height: 537px;
+        width: 597px;
+        background-color:#FEFCF7 ;
+        z-index: 1;
+        position: fixed;
+    }
+    
+
+    .spazz{
+        right: 380px;
     }
 }

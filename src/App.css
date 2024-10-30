@@ -23,6 +23,9 @@
   .App{
     width: 689px;
   }
+
+  #btn{
+  }
 }
 
 @media(min-width: 1024px){
