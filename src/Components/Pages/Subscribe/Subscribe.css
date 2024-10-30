@@ -26,11 +26,14 @@ flex-shrink: 0;
 
 .os{
     background-color: #2C343E;
+    width: 85vw;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .os-container{
     height: 567px;
-    width: 80vw;
+    width: 85vw;
     background-color:#FEFCF7 ;
     z-index: 1;
     position: fixed;
@@ -48,7 +51,7 @@ flex-shrink: 0;
 }
 
 .spazz{
-    right: 430px;
+    right: 65%;
 }
 }
 
@@ -72,9 +75,11 @@ flex-shrink: 0;
         z-index: 1;
         position: fixed;
     }
+
+    .os{
+        width: 597px;
+    }
     
 
-    .spazz{
-        right: 380px;
-    }
+   
 }
