@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   padding: 9% 0;
+  top: 0px;
+  z-index: 3;
+  position: relative;
 }
 
 .nav-links {
@@ -22,6 +25,8 @@
     rgba(254, 252, 247, 0.5) 0%,
     #fefcf7 55.94%
   );
+  position: fixed;
+  z-index: 2;
 }
 
 .header-logo {

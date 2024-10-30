@@ -8,7 +8,7 @@ import { Subscribe } from './Components/Pages/Subscribe/Subscribe'
 import { useState } from 'react'
 
 function App() {
-  const [checkout, setCheckout] = useState(true) 
+  const [checkout, setCheckout] = useState(false) 
 
   return (
     <div className='App'>
