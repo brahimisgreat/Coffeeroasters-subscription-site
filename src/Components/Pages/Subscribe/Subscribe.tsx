@@ -5,8 +5,12 @@ import { PickUrPlan } from './PickUrPlan'
 import { DrinkCoffee } from './DrinkCoffee'
 import { useState } from 'react'
 
+interface Props {
+  setCheckout: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-export const Subscribe = () => {
+
+export const Subscribe = ({setCheckout}:Props) => {
   const [selected5, setSelected5] = useState("");
   const [selected1, setSelected1] = useState("");
   const [selected2, setSelected2] = useState("");
@@ -28,11 +32,12 @@ export const Subscribe = () => {
           <button className='btn text-xl'>Create your plan</button>
         </div>
 
-        <div className='os-container text-black '>
-          <h3 className='os  text-white font-bold  rounded-lg  h-24 text-3xl flex items-center pl-3'>Order Summary</h3>
-          <p>“I drink my coffee as <span className='choice'>{selected1}</span>, with a <span className='choice'>{selected2}</span> type of bean. <span className='choice'>{selected3}</span> ground ala <span className='choice'>{selected4}</span>, sent to me {selected5}.”</p>
-          <p className='leading-6'>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
-          <button className='btn text-white'>Checkout -$14.00 / mo</button>
+        <div className='os-container rounded-lg  flex flex-col gap-7  items-center'>
+          <div className='black absolute'>fdsfdsfdfds</div>
+          <h3 className='os  text-white font-bold  rounded-lg  h-24 text-3xl flex items-center pl-10 w-full'>Order Summary</h3>
+          <p className='text-2xl font-bold text-gray-500 w-72'>“I drink my coffee as <span className='choice'>{selected1}</span>, with a <span className='choice'>{selected2}</span> type of bean. <span className='choice'>{selected3}</span> ground ala <span className='choice'>{selected4}</span>, sent to me <span className='choice'>{selected5}</span>.”</p>
+          <p className='leading-6 opacity-80 w-72 text-black'>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+          <button className='btn text-white w-72'>Checkout -$14.00 / mo</button>
         </div>
     </div>
   )

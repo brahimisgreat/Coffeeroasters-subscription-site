@@ -29,7 +29,12 @@ flex-shrink: 0;
 }
 
 .os-container{
-    height: 597px;
+    height: 507px;
+    width: 80vw;
+}
+
+.black{
+   
 }
 
 
