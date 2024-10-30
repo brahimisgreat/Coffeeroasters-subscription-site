@@ -1,4 +1,3 @@
-import React from "react";
 import hero from '../../../assets/about/mobile/image-quality.jpg'
 import heromd from '../../../assets/about/tablet/image-quality.jpg'
 import herolg from '../../../assets/about/desktop/image-quality.jpg'

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Ourhead.css'
 import uk from '../../../assets/about/desktop/illustration-uk.svg'
 import canada from '../../../assets/about/desktop/illustration-canada.svg'

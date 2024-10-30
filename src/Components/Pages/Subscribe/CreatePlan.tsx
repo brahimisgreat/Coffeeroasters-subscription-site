@@ -1,4 +1,3 @@
-import React from "react";
 import "./CreatePlan.css";
 
 export const CreatePlan = () => {

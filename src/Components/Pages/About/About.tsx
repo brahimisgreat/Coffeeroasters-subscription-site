@@ -1,4 +1,3 @@
-import React from 'react'
 import { AboutInfo } from './AboutInfo'
 import { OurCommitment } from './OurCommitment'
 import { Quality } from './Quality'

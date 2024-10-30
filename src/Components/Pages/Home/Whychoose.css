@@ -4,9 +4,7 @@
   background: #2c343e;
 }
 
-.why {
  
-}
 
 .dad{
   height: 1400px;
@@ -26,8 +24,7 @@
 
 
 @media (min-width: 768px) {
-.dad{
-}
+
 
   .why{
     height: 573px;

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Aboutinfo.css";
 
 export const AboutInfo = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./OurCommitment.css";
 import hero from "../../../assets/about/mobile/image-commitment.jpg";
 import herolg from '../../../assets/about/desktop/image-commitment.jpg'

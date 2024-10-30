@@ -1,4 +1,3 @@
-import React from "react";
 import "./PickUrPlan.css";
 
 export const PickUrPlan = () => {
